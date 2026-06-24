@@ -26,4 +26,23 @@ public class StudentServiceImpl implements StudentService {
 		return sr.findAll();
 	}
 
+	@Override
+	public void delete(int roll) {
+		// TODO Auto-generated method stub
+		sr.deleteById(roll);
+	}
+
+	@Override
+	public Student update(int roll, Student s) {
+		// TODO Auto-generated method stub
+		s.setRoll(roll);
+		return sr.save(s);
+	}
+
+	@Override
+	public void addAll(List<Student> s) {
+		// TODO Auto-generated method stub
+		sr.saveAll(s);
+	}
+
 }

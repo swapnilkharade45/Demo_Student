@@ -7,5 +7,12 @@ import com.example.demo.model.Student;
 public interface StudentService {
 
 	void add(Student s);
+
 	List<Student> display();
+
+	void delete(int roll);
+
+	Student update(int roll, Student s);
+	
+	void addAll(List<Student> s);
 }
