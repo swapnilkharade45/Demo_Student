@@ -42,6 +42,6 @@ public class StudentController {
 	
 	@PostMapping("addaAll")
 	public void addAllStudent(@RequestBody List<Student> s) {
-		ss.addAll(s);
+		ss.addAll(s); 
 	}
 }
